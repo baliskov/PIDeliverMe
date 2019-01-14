@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Type="table=Kupac" Target="/Data/dbo.Kupac/TableData-000-00000.BCP" Id="R7ba9fe264d3741a8" /><Relationship Type="schema=dbo" Target="/Data/dbo.Kupac/TableData-000-00000.BCP" Id="R1ac76ccbfd934829" /></Relationships>
