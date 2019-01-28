@@ -22,17 +22,17 @@ namespace DM_app
 
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void MetroButton1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void metroButton1_Click_1(object sender, EventArgs e)
+        private void MetroButton1_Click_1(object sender, EventArgs e)
         {
             //kod za povezivanje događaja prilikom clicka na button=>otvara nam drugi prozor
             new prijava_trgovina().Show();
@@ -40,7 +40,7 @@ namespace DM_app
 
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
+        private void MetroButton2_Click(object sender, EventArgs e)
         {
             new registracija().Show();
             this.Hide();

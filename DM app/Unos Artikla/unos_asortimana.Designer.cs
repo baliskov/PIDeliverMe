@@ -1,6 +1,6 @@
 ﻿namespace DM_app
 {
-    partial class unos_asortimana
+    partial class Unos_asortimana
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(unos_asortimana));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Unos_asortimana));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroTextBox8 = new MetroFramework.Controls.MetroTextBox();
@@ -51,7 +51,16 @@
             this.odjelBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.odjelBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
-            this.povratak = new System.Windows.Forms.PictureBox();
+            this.odjelBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
+            this.bazaPodatakaDeliverMeDataSet1 = new DM_app.BazaPodatakaDeliverMeDataSet1();
+            this.odjelBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
+            this.bazaPodatakaDeliverMeDataSetBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.odjelBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.bazaPodatakaDeliverMeDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.prodoavacBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.odjelBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.odjelBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.odjelTableAdapter1 = new DM_app.BazaPodatakaDeliverMeDataSet1TableAdapters.OdjelTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kupacBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prodoavacBindingSource)).BeginInit();
@@ -62,7 +71,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.kupacBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.odjelBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.odjelBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.povratak)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odjelBindingSource8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaPodatakaDeliverMeDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odjelBindingSource7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaPodatakaDeliverMeDataSetBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odjelBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaPodatakaDeliverMeDataSetBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodoavacBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odjelBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odjelBindingSource6)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -70,13 +87,13 @@
             this.pictureBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 31);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(589, 108);
+            this.pictureBox1.Size = new System.Drawing.Size(691, 108);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 51;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // metroTile1
             // 
@@ -85,11 +102,11 @@
             this.metroTile1.CustomBackground = true;
             this.metroTile1.CustomForeColor = true;
             this.metroTile1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.metroTile1.Location = new System.Drawing.Point(4, 111);
+            this.metroTile1.Location = new System.Drawing.Point(11, 120);
             this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(210, 30);
+            this.metroTile1.Size = new System.Drawing.Size(210, 36);
             this.metroTile1.TabIndex = 52;
-            this.metroTile1.Text = "Unos artikla";
+            this.metroTile1.Text = "UNOS ARTIKLA";
             this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
@@ -99,7 +116,7 @@
             this.metroTextBox8.Name = "metroTextBox8";
             this.metroTextBox8.Size = new System.Drawing.Size(168, 23);
             this.metroTextBox8.TabIndex = 53;
-            this.metroTextBox8.Click += new System.EventHandler(this.metroTextBox8_Click);
+            this.metroTextBox8.Click += new System.EventHandler(this.MetroTextBox8_Click);
             // 
             // metroLabel1
             // 
@@ -107,18 +124,18 @@
             this.metroLabel1.CustomBackground = true;
             this.metroLabel1.Location = new System.Drawing.Point(33, 176);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(107, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(84, 19);
             this.metroLabel1.TabIndex = 54;
-            this.metroLabel1.Text = "Naziv proizvoda:";
+            this.metroLabel1.Text = "Naziv artikla:";
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(235, 222);
+            this.metroButton2.Location = new System.Drawing.Point(225, 229);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(82, 26);
             this.metroButton2.TabIndex = 55;
             this.metroButton2.Text = "Dodaj";
-            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            this.metroButton2.Click += new System.EventHandler(this.MetroButton2_Click);
             // 
             // metroTextBox1
             // 
@@ -126,7 +143,7 @@
             this.metroTextBox1.Name = "metroTextBox1";
             this.metroTextBox1.Size = new System.Drawing.Size(168, 23);
             this.metroTextBox1.TabIndex = 57;
-            this.metroTextBox1.Click += new System.EventHandler(this.metroTextBox1_Click);
+            this.metroTextBox1.Click += new System.EventHandler(this.MetroTextBox1_Click);
             // 
             // metroLabel2
             // 
@@ -137,7 +154,7 @@
             this.metroLabel2.Size = new System.Drawing.Size(85, 19);
             this.metroLabel2.TabIndex = 59;
             this.metroLabel2.Text = "Cijena artikla";
-            this.metroLabel2.Click += new System.EventHandler(this.metroLabel2_Click);
+            this.metroLabel2.Click += new System.EventHandler(this.MetroLabel2_Click);
             // 
             // prodoavacBindingSource
             // 
@@ -199,35 +216,70 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DimGray;
-            this.button1.Location = new System.Drawing.Point(404, 291);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(397, 209);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 29);
+            this.button1.Size = new System.Drawing.Size(136, 46);
             this.button1.TabIndex = 60;
-            this.button1.Text = "Dalje";
+            this.button1.Text = "Glavni izbornik";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // povratak
+            // odjelBindingSource8
             // 
-            this.povratak.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.povratak.Image = ((System.Drawing.Image)(resources.GetObject("povratak.Image")));
-            this.povratak.InitialImage = ((System.Drawing.Image)(resources.GetObject("povratak.InitialImage")));
-            this.povratak.Location = new System.Drawing.Point(518, 158);
-            this.povratak.Name = "povratak";
-            this.povratak.Size = new System.Drawing.Size(47, 37);
-            this.povratak.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.povratak.TabIndex = 61;
-            this.povratak.TabStop = false;
-            this.povratak.Click += new System.EventHandler(this.povratak_Click);
+            this.odjelBindingSource8.DataMember = "Odjel";
+            this.odjelBindingSource8.DataSource = this.bazaPodatakaDeliverMeDataSet1;
             // 
-            // unos_asortimana
+            // bazaPodatakaDeliverMeDataSet1
+            // 
+            this.bazaPodatakaDeliverMeDataSet1.DataSetName = "BazaPodatakaDeliverMeDataSet1";
+            this.bazaPodatakaDeliverMeDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // odjelBindingSource7
+            // 
+            this.odjelBindingSource7.DataMember = "Odjel";
+            this.odjelBindingSource7.DataSource = this.bazaPodatakaDeliverMeDataSetBindingSource2;
+            // 
+            // bazaPodatakaDeliverMeDataSetBindingSource2
+            // 
+            this.bazaPodatakaDeliverMeDataSetBindingSource2.DataSource = this.bazaPodatakaDeliverMeDataSet;
+            this.bazaPodatakaDeliverMeDataSetBindingSource2.Position = 0;
+            // 
+            // odjelBindingSource4
+            // 
+            this.odjelBindingSource4.DataMember = "Odjel";
+            this.odjelBindingSource4.DataSource = this.bazaPodatakaDeliverMeDataSetBindingSource;
+            // 
+            // bazaPodatakaDeliverMeDataSetBindingSource1
+            // 
+            this.bazaPodatakaDeliverMeDataSetBindingSource1.DataSource = this.bazaPodatakaDeliverMeDataSet;
+            this.bazaPodatakaDeliverMeDataSetBindingSource1.Position = 0;
+            // 
+            // prodoavacBindingSource1
+            // 
+            this.prodoavacBindingSource1.DataMember = "Prodoavac";
+            this.prodoavacBindingSource1.DataSource = this.bazaPodatakaDeliverMeDataSetBindingSource1;
+            // 
+            // odjelBindingSource5
+            // 
+            this.odjelBindingSource5.DataMember = "Odjel";
+            this.odjelBindingSource5.DataSource = this.bazaPodatakaDeliverMeDataSetBindingSource1;
+            // 
+            // odjelBindingSource6
+            // 
+            this.odjelBindingSource6.DataMember = "Odjel";
+            this.odjelBindingSource6.DataSource = this.bazaPodatakaDeliverMeDataSetBindingSource;
+            // 
+            // odjelTableAdapter1
+            // 
+            this.odjelTableAdapter1.ClearBeforeFill = true;
+            // 
+            // Unos_asortimana
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 450);
-            this.Controls.Add(this.povratak);
+            this.ClientSize = new System.Drawing.Size(594, 325);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroTextBox1);
@@ -236,7 +288,8 @@
             this.Controls.Add(this.metroTextBox8);
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "unos_asortimana";
+            this.Name = "Unos_asortimana";
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kupacBindingSource)).EndInit();
@@ -248,7 +301,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.kupacBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.odjelBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.odjelBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.povratak)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odjelBindingSource8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaPodatakaDeliverMeDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odjelBindingSource7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaPodatakaDeliverMeDataSetBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odjelBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaPodatakaDeliverMeDataSetBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodoavacBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odjelBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odjelBindingSource6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,6 +338,15 @@
         private System.Windows.Forms.BindingSource odjelBindingSource1;
         private System.Windows.Forms.BindingSource odjelBindingSource3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox povratak;
+        private System.Windows.Forms.BindingSource odjelBindingSource4;
+        private System.Windows.Forms.BindingSource bazaPodatakaDeliverMeDataSetBindingSource1;
+        private System.Windows.Forms.BindingSource prodoavacBindingSource1;
+        private System.Windows.Forms.BindingSource odjelBindingSource5;
+        private System.Windows.Forms.BindingSource odjelBindingSource7;
+        private System.Windows.Forms.BindingSource bazaPodatakaDeliverMeDataSetBindingSource2;
+        private System.Windows.Forms.BindingSource odjelBindingSource6;
+        private BazaPodatakaDeliverMeDataSet1 bazaPodatakaDeliverMeDataSet1;
+        private System.Windows.Forms.BindingSource odjelBindingSource8;
+        private BazaPodatakaDeliverMeDataSet1TableAdapters.OdjelTableAdapter odjelTableAdapter1;
     }
 }

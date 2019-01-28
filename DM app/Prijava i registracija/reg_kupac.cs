@@ -54,10 +54,10 @@ namespace DM_app
             {
 
 
-                using (SqlConnection com = DB.con)
-                {
+               
+                
                     DB.OpenCon();
-                    SqlCommand sqlCmd = new SqlCommand("UserAdd", com);
+                    SqlCommand sqlCmd = new SqlCommand("UserAdd", DB.con);
                     sqlCmd.CommandType = CommandType.StoredProcedure;
                     sqlCmd.Parameters.AddWithValue("@Ime", metroTextBox8.Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@Adresa", metroTextBox10.Text.Trim());
@@ -71,7 +71,7 @@ namespace DM_app
                     DB.CloseCon();
                     Clear();
 
-                }
+                
                 void Clear()
                 {
                     metroTextBox8.Text = metroTextBox10.Text = metroTextBox9.Text = metroTextBox13.Text = metroTextBox12.Text = metroTextBox11.Text = metroTextBox14.Text = "";
@@ -159,6 +159,11 @@ namespace DM_app
         }
 
         private void povratak_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             new registracija().Show();
             this.Hide();

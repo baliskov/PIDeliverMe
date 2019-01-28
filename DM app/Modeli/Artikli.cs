@@ -8,5 +8,9 @@ namespace DM_app.Modeli
 {
     class Artikli
     {
+        public void DataBinding()
+        {
+            
+        }
     }
 }

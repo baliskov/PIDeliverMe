@@ -27,19 +27,20 @@ namespace DM_app
 
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void MetroButton1_Click(object sender, EventArgs e)
         {
 
             
 
-            SqlConnection com = DB.con;
+            
             
             string query = " Select * from Kupac Where korisnickoIme = '" + textBox1.Text.Trim() + "'and sifra ='" + textBox2.Text.Trim() + "'";
-            SqlDataAdapter sda = new SqlDataAdapter(query, com);
+            SqlDataAdapter sda = new SqlDataAdapter(query, DB.con);
             DataTable dtbl = new DataTable();
             sda.Fill(dtbl);
             if (dtbl.Rows.Count == 1)
             {
+                PrijavljeniKupac.id_kup = (int)dtbl.Rows[0]["UserID"];
                 Glavni objGlavni = new Glavni();
                 this.Hide();
                 objGlavni.Show();
@@ -54,7 +55,23 @@ namespace DM_app
 
         }
 
-        private void povratak_Click(object sender, EventArgs e)
+        private void Povratak_Click(object sender, EventArgs e)
+        {
+            new prijava_trgovina().Show();
+            this.Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             new prijava_trgovina().Show();
             this.Hide();

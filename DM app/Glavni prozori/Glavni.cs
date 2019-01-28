@@ -22,32 +22,32 @@ namespace DM_app
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void PictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void TextBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void MetroButton1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }
@@ -65,7 +65,7 @@ namespace DM_app
 
         }
 
-        private void trgovačkiLanciToolStripMenuItem_Click(object sender, EventArgs e)
+        private void TrgovačkiLanciToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new trgovine().Show();
             this.Hide();
@@ -77,27 +77,41 @@ namespace DM_app
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            new postavke().ShowDialog();
+            new Postavke().ShowDialog();
             this.Hide();
         }
 
-        private void kontaktToolStripMenuItem_Click(object sender, EventArgs e)
+        private void KontaktToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new Kontakt().ShowDialog();
             
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void PictureBox2_Click(object sender, EventArgs e)
         {
             new Košarica().Show();
             this.Hide();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ListView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+       
+
+        private void NarudžbeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new narud().Show();
+            this.Hide();
+        }
+
+        private void odjavaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new prijava().Show();
+            this.Hide();
         }
     }
 }

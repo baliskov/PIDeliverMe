@@ -22,31 +22,36 @@ namespace DM_app
 
         }
 
-        private void trgovačkiLanciToolStripMenuItem_Click(object sender, EventArgs e)
+        private void TrgovačkiLanciToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new unos_odjela().Show();
+            new Unos_asortimana().Show();
             this.Hide();
         }
 
-        private void dostavaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DostavaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new narud().Show();
-            this.Hide();
+            
         }
 
-        private void kontaktToolStripMenuItem_Click(object sender, EventArgs e)
+        private void KontaktToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new Kontakt();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             
     }
 
-        private void urediToolStripMenuItem_Click(object sender, EventArgs e)
+        private void UrediToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new unos_odjela().Show();
+            new Unos_asortimana().Show();
+            this.Hide();
+        }
+
+        private void odjavaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new prijava().Show();
             this.Hide();
         }
     }

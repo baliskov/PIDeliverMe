@@ -45,5 +45,11 @@ namespace DM_app
             new prijava().Show();
             this.Hide();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            new prijava().Show();
+            this.Hide();
+        }
     }
 }

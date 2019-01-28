@@ -46,9 +46,9 @@
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.povratak = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.povratak)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTile1
@@ -58,10 +58,9 @@
             this.metroTile1.CustomBackground = true;
             this.metroTile1.CustomForeColor = true;
             this.metroTile1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.metroTile1.Location = new System.Drawing.Point(21, 171);
-            this.metroTile1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.metroTile1.Location = new System.Drawing.Point(14, 111);
             this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(358, 74);
+            this.metroTile1.Size = new System.Drawing.Size(239, 48);
             this.metroTile1.TabIndex = 7;
             this.metroTile1.Text = "KUPAC";
             this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -69,64 +68,57 @@
             // 
             // metroTextBox8
             // 
-            this.metroTextBox8.Location = new System.Drawing.Point(170, 294);
-            this.metroTextBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.metroTextBox8.Location = new System.Drawing.Point(113, 191);
             this.metroTextBox8.Name = "metroTextBox8";
-            this.metroTextBox8.Size = new System.Drawing.Size(144, 35);
+            this.metroTextBox8.Size = new System.Drawing.Size(96, 23);
             this.metroTextBox8.TabIndex = 8;
             this.metroTextBox8.Click += new System.EventHandler(this.metroTextBox8_Click);
             // 
             // metroTextBox9
             // 
-            this.metroTextBox9.Location = new System.Drawing.Point(170, 338);
-            this.metroTextBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.metroTextBox9.Location = new System.Drawing.Point(113, 220);
             this.metroTextBox9.Name = "metroTextBox9";
-            this.metroTextBox9.Size = new System.Drawing.Size(144, 35);
+            this.metroTextBox9.Size = new System.Drawing.Size(96, 23);
             this.metroTextBox9.TabIndex = 9;
             this.metroTextBox9.Click += new System.EventHandler(this.metroTextBox9_Click);
             // 
             // metroTextBox10
             // 
-            this.metroTextBox10.Location = new System.Drawing.Point(170, 383);
-            this.metroTextBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.metroTextBox10.Location = new System.Drawing.Point(113, 249);
             this.metroTextBox10.Name = "metroTextBox10";
-            this.metroTextBox10.Size = new System.Drawing.Size(144, 35);
+            this.metroTextBox10.Size = new System.Drawing.Size(96, 23);
             this.metroTextBox10.TabIndex = 10;
             this.metroTextBox10.Click += new System.EventHandler(this.metroTextBox10_Click);
             // 
             // metroTextBox11
             // 
-            this.metroTextBox11.Location = new System.Drawing.Point(170, 517);
-            this.metroTextBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.metroTextBox11.Location = new System.Drawing.Point(113, 336);
             this.metroTextBox11.Name = "metroTextBox11";
-            this.metroTextBox11.Size = new System.Drawing.Size(144, 35);
+            this.metroTextBox11.Size = new System.Drawing.Size(96, 23);
             this.metroTextBox11.TabIndex = 13;
             this.metroTextBox11.Click += new System.EventHandler(this.metroTextBox11_Click);
             // 
             // metroTextBox12
             // 
-            this.metroTextBox12.Location = new System.Drawing.Point(170, 472);
-            this.metroTextBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.metroTextBox12.Location = new System.Drawing.Point(113, 307);
             this.metroTextBox12.Name = "metroTextBox12";
-            this.metroTextBox12.Size = new System.Drawing.Size(144, 35);
+            this.metroTextBox12.Size = new System.Drawing.Size(96, 23);
             this.metroTextBox12.TabIndex = 12;
             this.metroTextBox12.Click += new System.EventHandler(this.metroTextBox12_Click);
             // 
             // metroTextBox13
             // 
-            this.metroTextBox13.Location = new System.Drawing.Point(170, 428);
-            this.metroTextBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.metroTextBox13.Location = new System.Drawing.Point(113, 278);
             this.metroTextBox13.Name = "metroTextBox13";
-            this.metroTextBox13.Size = new System.Drawing.Size(144, 35);
+            this.metroTextBox13.Size = new System.Drawing.Size(96, 23);
             this.metroTextBox13.TabIndex = 11;
             this.metroTextBox13.Click += new System.EventHandler(this.metroTextBox13_Click);
             // 
             // metroTextBox14
             // 
-            this.metroTextBox14.Location = new System.Drawing.Point(170, 562);
-            this.metroTextBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.metroTextBox14.Location = new System.Drawing.Point(113, 365);
             this.metroTextBox14.Name = "metroTextBox14";
-            this.metroTextBox14.Size = new System.Drawing.Size(144, 35);
+            this.metroTextBox14.Size = new System.Drawing.Size(96, 23);
             this.metroTextBox14.TabIndex = 14;
             this.metroTextBox14.Click += new System.EventHandler(this.metroTextBox14_Click);
             // 
@@ -134,8 +126,7 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.CustomBackground = true;
-            this.metroLabel1.Location = new System.Drawing.Point(114, 300);
-            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel1.Location = new System.Drawing.Point(14, 195);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(31, 19);
             this.metroLabel1.TabIndex = 15;
@@ -145,8 +136,7 @@
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.CustomBackground = true;
-            this.metroLabel2.Location = new System.Drawing.Point(75, 345);
-            this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel2.Location = new System.Drawing.Point(14, 224);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(57, 19);
             this.metroLabel2.TabIndex = 16;
@@ -156,8 +146,7 @@
             // 
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.CustomBackground = true;
-            this.metroLabel3.Location = new System.Drawing.Point(86, 389);
-            this.metroLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel3.Location = new System.Drawing.Point(14, 253);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(50, 19);
             this.metroLabel3.TabIndex = 17;
@@ -167,8 +156,7 @@
             // 
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.CustomBackground = true;
-            this.metroLabel4.Location = new System.Drawing.Point(21, 523);
-            this.metroLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel4.Location = new System.Drawing.Point(14, 340);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(93, 19);
             this.metroLabel4.TabIndex = 20;
@@ -178,19 +166,17 @@
             // 
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.CustomBackground = true;
-            this.metroLabel5.Location = new System.Drawing.Point(90, 478);
-            this.metroLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel5.Location = new System.Drawing.Point(14, 311);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(47, 19);
             this.metroLabel5.TabIndex = 19;
-            this.metroLabel5.Text = "e-mail";
+            this.metroLabel5.Text = "E-mail";
             // 
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
             this.metroLabel6.CustomBackground = true;
-            this.metroLabel6.Location = new System.Drawing.Point(86, 434);
-            this.metroLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel6.Location = new System.Drawing.Point(14, 282);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(50, 19);
             this.metroLabel6.TabIndex = 18;
@@ -200,8 +186,7 @@
             // 
             this.metroLabel7.AutoSize = true;
             this.metroLabel7.CustomBackground = true;
-            this.metroLabel7.Location = new System.Drawing.Point(87, 568);
-            this.metroLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel7.Location = new System.Drawing.Point(14, 369);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(52, 19);
             this.metroLabel7.TabIndex = 21;
@@ -209,10 +194,9 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(762, 545);
-            this.metroButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.metroButton1.Location = new System.Drawing.Point(508, 354);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(159, 52);
+            this.metroButton1.Size = new System.Drawing.Size(106, 34);
             this.metroButton1.TabIndex = 22;
             this.metroButton1.Text = "Registriraj se";
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
@@ -222,34 +206,30 @@
             this.pictureBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 40);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(957, 166);
+            this.pictureBox1.Size = new System.Drawing.Size(810, 108);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
-            // povratak
+            // pictureBox2
             // 
-            this.povratak.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.povratak.Image = ((System.Drawing.Image)(resources.GetObject("povratak.Image")));
-            this.povratak.InitialImage = ((System.Drawing.Image)(resources.GetObject("povratak.InitialImage")));
-            this.povratak.Location = new System.Drawing.Point(0, 4);
-            this.povratak.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.povratak.Name = "povratak";
-            this.povratak.Size = new System.Drawing.Size(57, 35);
-            this.povratak.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.povratak.TabIndex = 29;
-            this.povratak.TabStop = false;
-            this.povratak.Click += new System.EventHandler(this.povratak_Click);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 12);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 36);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 58;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // reg_kupac
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(956, 646);
-            this.Controls.Add(this.povratak);
+            this.ClientSize = new System.Drawing.Size(637, 420);
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.metroButton1);
@@ -267,13 +247,15 @@
             this.Controls.Add(this.metroTextBox10);
             this.Controls.Add(this.metroTextBox9);
             this.Controls.Add(this.metroTextBox8);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Controls.Add(this.pictureBox2);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "reg_kupac";
-            this.Padding = new System.Windows.Forms.Padding(30, 92, 30, 31);
+            this.ShowInTaskbar = false;
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.povratak)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,6 +279,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroButton metroButton1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox povratak;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

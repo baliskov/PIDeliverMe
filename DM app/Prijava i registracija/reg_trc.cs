@@ -58,10 +58,10 @@ namespace DM_app
             {
 
 
-                using (SqlConnection com = DB.con)
-                {
+                
+                
                    DB.OpenCon();
-                    SqlCommand sqlCmd = new SqlCommand("ProdavacAdd", com);
+                    SqlCommand sqlCmd = new SqlCommand("ProdavacAdd", DB.con);
                     sqlCmd.CommandType = CommandType.StoredProcedure;
                     sqlCmd.Parameters.AddWithValue("@NazivFirme", metroTextBox8.Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@Vlasnik", metroTextBox10.Text.Trim());
@@ -76,14 +76,14 @@ namespace DM_app
                     Clear();
                    
 
-                }
+                
                 void Clear()
                 {
                     metroTextBox8.Text = metroTextBox10.Text = metroTextBox9.Text = metroTextBox13.Text = metroTextBox12.Text = metroTextBox11.Text = metroTextBox14.Text = "";
 
                 }
 
-                new unos_odjela().Show();
+                new pocetni_prijava_trg().Show();
                 this.Hide();
 
             }
@@ -120,6 +120,11 @@ namespace DM_app
         }
 
         private void povratak_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             new registracija().Show();
             this.Hide();

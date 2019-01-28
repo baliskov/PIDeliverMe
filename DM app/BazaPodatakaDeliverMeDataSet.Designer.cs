@@ -32,6 +32,8 @@ namespace DM_app {
         
         private OdjelDataTable tableOdjel;
         
+        private global::System.Data.DataRelation relationFK_Prodoavac_Odjel;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -266,6 +268,7 @@ namespace DM_app {
                     this.tableOdjel.InitVars();
                 }
             }
+            this.relationFK_Prodoavac_Odjel = this.Relations["FK_Prodoavac_Odjel"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -284,6 +287,25 @@ namespace DM_app {
             base.Tables.Add(this.tableArtikli);
             this.tableOdjel = new OdjelDataTable();
             base.Tables.Add(this.tableOdjel);
+            global::System.Data.ForeignKeyConstraint fkc;
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_Odjel_Artikli", new global::System.Data.DataColumn[] {
+                        this.tableOdjel.Id_OdjelColumn}, new global::System.Data.DataColumn[] {
+                        this.tableArtikli.Id_ArtiklaColumn});
+            this.tableArtikli.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.Cascade;
+            fkc.UpdateRule = global::System.Data.Rule.Cascade;
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_Prodoavac_Odjel", new global::System.Data.DataColumn[] {
+                        this.tableProdoavac.ProdavacIDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableOdjel.Id_OdjelColumn});
+            this.tableOdjel.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.Cascade;
+            fkc.UpdateRule = global::System.Data.Rule.Cascade;
+            this.relationFK_Prodoavac_Odjel = new global::System.Data.DataRelation("FK_Prodoavac_Odjel", new global::System.Data.DataColumn[] {
+                        this.tableProdoavac.ProdavacIDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableOdjel.Id_OdjelColumn}, false);
+            this.Relations.Add(this.relationFK_Prodoavac_Odjel);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1481,11 +1503,14 @@ namespace DM_app {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public OdjelRow AddOdjelRow(int Id_Odjel, string Naziv_Odjela) {
+            public OdjelRow AddOdjelRow(ProdoavacRow parentProdoavacRowByFK_Prodoavac_Odjel, string Naziv_Odjela) {
                 OdjelRow rowOdjelRow = ((OdjelRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Id_Odjel,
+                        null,
                         Naziv_Odjela};
+                if ((parentProdoavacRowByFK_Prodoavac_Odjel != null)) {
+                    columnValuesArray[0] = parentProdoavacRowByFK_Prodoavac_Odjel[0];
+                }
                 rowOdjelRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowOdjelRow);
                 return rowOdjelRow;
@@ -2100,6 +2125,17 @@ namespace DM_app {
             public void SetsifraNull() {
                 this[this.tableProdoavac.sifraColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public OdjelRow[] GetOdjelRows() {
+                if ((this.Table.ChildRelations["FK_Prodoavac_Odjel"] == null)) {
+                    return new OdjelRow[0];
+                }
+                else {
+                    return ((OdjelRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Prodoavac_Odjel"])));
+                }
+            }
         }
         
         /// <summary>
@@ -2172,6 +2208,17 @@ namespace DM_app {
                 }
                 set {
                     this[this.tableOdjel.Naziv_OdjelaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public ProdoavacRow ProdoavacRow {
+                get {
+                    return ((ProdoavacRow)(this.GetParentRow(this.Table.ParentRelations["FK_Prodoavac_Odjel"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_Prodoavac_Odjel"]);
                 }
             }
         }
@@ -4236,15 +4283,6 @@ SELECT Id_Artikla, [Naziv Artikla] FROM Artikli WHERE (Id_Artikla = @Id_Artikla)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private int UpdateUpdatedRows(BazaPodatakaDeliverMeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._kupacTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Kupac.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._kupacTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._prodoavacTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Prodoavac.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -4254,21 +4292,30 @@ SELECT Id_Artikla, [Naziv Artikla] FROM Artikli WHERE (Id_Artikla = @Id_Artikla)
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._artikliTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Artikli.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._artikliTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._odjelTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Odjel.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._odjelTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._kupacTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Kupac.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._kupacTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._artikliTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Artikli.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._artikliTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -4282,14 +4329,6 @@ SELECT Id_Artikla, [Naziv Artikla] FROM Artikli WHERE (Id_Artikla = @Id_Artikla)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private int UpdateInsertedRows(BazaPodatakaDeliverMeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._kupacTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Kupac.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._kupacTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._prodoavacTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Prodoavac.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -4298,19 +4337,27 @@ SELECT Id_Artikla, [Naziv Artikla] FROM Artikli WHERE (Id_Artikla = @Id_Artikla)
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._artikliTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Artikli.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._artikliTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._odjelTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Odjel.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._odjelTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._kupacTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Kupac.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._kupacTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._artikliTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Artikli.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._artikliTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -4324,14 +4371,6 @@ SELECT Id_Artikla, [Naziv Artikla] FROM Artikli WHERE (Id_Artikla = @Id_Artikla)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private int UpdateDeletedRows(BazaPodatakaDeliverMeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._odjelTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Odjel.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._odjelTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._artikliTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Artikli.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -4340,19 +4379,27 @@ SELECT Id_Artikla, [Naziv Artikla] FROM Artikli WHERE (Id_Artikla = @Id_Artikla)
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._prodoavacTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Prodoavac.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._prodoavacTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._kupacTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Kupac.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._kupacTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._odjelTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Odjel.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._odjelTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._prodoavacTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Prodoavac.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._prodoavacTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }

@@ -55,5 +55,27 @@ namespace DM_app.Properties {
                 return ((string)(this["DataBaseCon"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ZEKO\\Documents\\BazaP" +
+            "odatakaDeliverMe.mdf;Integrated Security=True;Connect Timeout=30")]
+        public string BazaPodatakaDeliverMeConnectionString {
+            get {
+                return ((string)(this["BazaPodatakaDeliverMeConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ZEKO\\Documents\\BazaP" +
+            "odatakaDeliverMe1.mdf;Integrated Security=True;Connect Timeout=30")]
+        public string DM {
+            get {
+                return ((string)(this["DM"]));
+            }
+        }
     }
 }

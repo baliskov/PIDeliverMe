@@ -652,4 +652,99 @@
         fzMn4+SX8rJPU+NHxjsq8/8BO1IzfgeQ320AAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="stavkakosariceBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>106, 17</value>
+  </metadata>
+  <metadata name="dM.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="dM.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="stavka_kosariceTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>404, 17</value>
+  </metadata>
+  <metadata name="narudzbaTableAdapterBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <metadata name="narudzbaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>272, 56</value>
+  </metadata>
+  <metadata name="narudzbaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>453, 56</value>
+  </metadata>
+  <metadata name="bazaPodatakaDeliverMeDataSet4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <metadata name="narudzbaBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>249, 95</value>
+  </metadata>
+  <metadata name="narudzbaTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>437, 95</value>
+  </metadata>
+  <metadata name="narudzbaBindingSource5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 212</value>
+  </metadata>
+  <metadata name="narudzbaBindingSource5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 212</value>
+  </metadata>
+  <metadata name="ggBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>641, 173</value>
+  </metadata>
+  <metadata name="ggBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>641, 173</value>
+  </metadata>
+  <metadata name="gg.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>575, 173</value>
+  </metadata>
+  <metadata name="gg.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>575, 173</value>
+  </metadata>
+  <metadata name="narudzbaBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>574, 134</value>
+  </metadata>
+  <metadata name="bazaPodatakaDeliverMe1DataSet2BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>256, 134</value>
+  </metadata>
+  <metadata name="bazaPodatakaDeliverMe1DataSet2BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>256, 134</value>
+  </metadata>
+  <metadata name="bazaPodatakaDeliverMe1DataSet2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
+  <metadata name="bazaPodatakaDeliverMe1DataSet2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
+  <metadata name="narudzbaTableAdapter2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 173</value>
+  </metadata>
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAA19JREFUeF7t3UFKHUEUheEXhMyygywkWZB7kqxHsixjvWCBAxH1VVXX7fN9cGh6
+        1KP7T/sCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AHCju5cnEOZH22Pb/f83IMb1+P+2/Wt7ahMBCPH6+PtEAAK8dfwiAAHeO/4+EYAT+sjx94kAnMhnjr9P
+        BOAEvnL8fSIAhd1y/H0iAAWNOP4+EYBCRh5/nwhAATOOv08EYGMzj79PBGBDK46/TwRgIyuPv++hDTjY
+        Ecf/p+1bG3Agxw+hHD+EcvwQyvFDKMcPoRw/hHL8EMrxQyjHD6EcP4Ry/BDK8UMoxw+hHD+EcvwQyvFD
+        KMcPoRw/hHL8EMrxQyjHD6EcP4Ry/BDK8UMoxw+hHD+EcvwQyvFDKMcPoRw/hHL8EMrxQyjHD6EcP4Ry
+        /BDK8UMoxw+hHD+EcvwQyvFDqCOO//q9322/rPS+t1HYEcdv59nPNopy/HbrBKAox28jJgAFOX4bNQEo
+        xvHbyAlAIY7fRk8AinD8NmMCUIDjt1kTgM05fps5AdiY47fZE4BNOX5bMQHYkOO3VROAzTh+WzkB2Ijj
+        t9UTgI0IgK2eAGxGBGzlBGBDImCrJgCbEgFbMQHYmAjY7AnA5kTAZk4AChABmzUBKEIEbMYEoBARsNET
+        gGJEwEZOAAoSARs1AShKBGzEBKAwEbBbJwDFiYDdMgE4gSMicP2en4PWn5+DnsQREfB7cNiICEA4EYBw
+        IgDhRADCiQCEEwEIJwIQTgQgnAhAOBGAcCIA4UQAwokAhBMBCCcCEE4EIJwIQDgRgHAiAOFEAMKJAIQT
+        AQgnAhBOBCCcCEA4EYBwIgDhRADCiQCEEwEIJwIQTgQgnAhAOBGAcCIA4UQAwokAhBMBCCcCEE4EINwR
+        EXhoAzaxMgJPbfdtwEZWRMDxw8ZmRsDxQwEzIuD4oZCREXD8UNCICDh+KOyWCDh+OIGvRMDxw4l8JgKO
+        H07oIxFw/HBi70XA8UOAtyLg+CHI6wg4fgh0jcBjm+OHUHcvTwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAIi6XZ1zDi8ijUwukAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="narudzbaBindingSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>199, 173</value>
+  </metadata>
+  <metadata name="narudzbaBindingSource4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>387, 173</value>
+  </metadata>
+  <metadata name="narudzbaTableAdapter3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>205, 212</value>
+  </metadata>
 </root>

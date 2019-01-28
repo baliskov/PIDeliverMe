@@ -1,6 +1,6 @@
 ﻿namespace DM_app
 {
-    partial class postavke
+    partial class Postavke
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(postavke));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Postavke));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
@@ -55,7 +55,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(58, 40);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -162,7 +162,7 @@
             this.metroButton7.TabIndex = 64;
             this.metroButton7.Text = "Spremi izmjene";
             this.metroButton7.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroButton7.Click += new System.EventHandler(this.metroButton7_Click);
+            this.metroButton7.Click += new System.EventHandler(this.MetroButton7_Click);
             // 
             // postavke
             // 
@@ -184,7 +184,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Name = "postavke";
             this.Style = MetroFramework.MetroColorStyle.Orange;
-            this.Load += new System.EventHandler(this.postavke_Load);
+            this.Load += new System.EventHandler(this.Postavke_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

@@ -1,6 +1,6 @@
-﻿ALTER PROC UserAdd
+﻿CREATE PROC UserAdd
 
-
+@UserID int,
 @Ime varchar(50),
 @Prezime varchar(50),
 @Telefon varchar(50),
@@ -13,3 +13,4 @@
 		INSERT INTO Kupac(Ime,Prezime,Telefon,Adresa,KorisnickoIme,email,sifra)
 		VALUES (@Ime,@Prezime,@Telefon,@Adresa,@KorisnickoIme,@email,@sifra)
 
+		commit;

@@ -17,29 +17,34 @@ namespace DM_app
             InitializeComponent();
         }
 
-        private void prijava_trgovina_Load(object sender, EventArgs e)
+        private void Prijava_trgovina_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void metroTextBox2_Click(object sender, EventArgs e)
+        private void MetroTextBox2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
+        private void MetroButton2_Click(object sender, EventArgs e)
         {
             new pocetni_prijava_trg().Show();
             this.Hide();
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void MetroButton1_Click(object sender, EventArgs e)
         {
             new pocetni().Show();
             this.Hide();
         }
 
-        private void povratak_Click(object sender, EventArgs e)
+        private void Povratak_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             new prijava().Show();
             this.Hide();

@@ -50,6 +50,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AdvancedDataGridView, Version=1.1.22318.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DG.AdvancedDataGridView.1.1.22318.2\lib\net40\AdvancedDataGridView.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -90,6 +93,8 @@
     <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
     </Reference>
@@ -105,8 +110,29 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.25.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.25\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Artikli.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BazaPodatakaDeliverMe1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaPodatakaDeliverMe1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BazaPodatakaDeliverMe1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaPodatakaDeliverMe1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BazaPodatakaDeliverMe1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaPodatakaDeliverMe1DataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BazaPodatakaDeliverMeDataSet.cs">
       <DependentUpon>BazaPodatakaDeliverMeDataSet.xsd</DependentUpon>
     </Compile>
@@ -114,6 +140,43 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BazaPodatakaDeliverMeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BazaPodatakaDeliverMeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaPodatakaDeliverMeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BazaPodatakaDeliverMeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaPodatakaDeliverMeDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BazaPodatakaDeliverMeDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaPodatakaDeliverMeDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BazaPodatakaDeliverMeDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaPodatakaDeliverMeDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gg.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gg.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Kosarica.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kupac.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Menu prikazi\Kosarica.cs">
       <SubType>Form</SubType>
@@ -127,10 +190,32 @@
     <Compile Include="Menu prikazi\narudzbe.Designer.cs">
       <DependentUpon>narudzbe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Modeli\Artikli.cs" />
     <Compile Include="Modeli\DB.cs" />
+    <Compile Include="Modeli\FiltrirajDG.cs" />
     <Compile Include="Modeli\Kosarica.cs" />
     <Compile Include="Modeli\Odjel.cs" />
+    <Compile Include="Modeli\Prijavljeni korisnik.cs" />
+    <Compile Include="Modeli\PrijavljeniKupac.cs" />
+    <Compile Include="Modeli\sum.cs" />
+    <Compile Include="Narudzba.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Prijava i registracija\pocetni_prijava_trg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +276,9 @@
     <Compile Include="Prijava i registracija\pocetni.Designer.cs">
       <DependentUpon>pocetni.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prodoavac.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Prijava i registracija\registracija.cs">
@@ -211,17 +299,14 @@
     <Compile Include="Prijava i registracija\reg_trc.Designer.cs">
       <DependentUpon>reg_trc.cs</DependentUpon>
     </Compile>
-    <Compile Include="Unos odjela i artikla\unos_asortimana.cs">
+    <Compile Include="Stavka_kosarice.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Unos Artikla\unos_asortimana.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Unos odjela i artikla\unos_asortimana.Designer.cs">
+    <Compile Include="Unos Artikla\unos_asortimana.Designer.cs">
       <DependentUpon>unos_asortimana.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Unos odjela i artikla\unos_odjela.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Unos odjela i artikla\unos_odjela.Designer.cs">
-      <DependentUpon>unos_odjela.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Glavni prozori\Glavni.resx">
       <DependentUpon>Glavni.cs</DependentUpon>
@@ -234,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu prikazi\narudzbe.resx">
       <DependentUpon>narudzbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu prikazi\trgovine.resx">
+      <DependentUpon>trgovine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prijava i registracija\pocetni_prijava_trg.resx">
       <DependentUpon>pocetni_prijava_trg.cs</DependentUpon>
@@ -261,6 +349,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Prijava i registracija\registracija.resx">
       <DependentUpon>registracija.cs</DependentUpon>
@@ -274,12 +363,42 @@
     <EmbeddedResource Include="Glavni prozori\sporedni.resx">
       <DependentUpon>sporedni.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Unos odjela i artikla\unos_asortimana.resx">
+    <EmbeddedResource Include="Unos Artikla\unos_asortimana.resx">
       <DependentUpon>unos_asortimana.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Unos odjela i artikla\unos_odjela.resx">
-      <DependentUpon>unos_odjela.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="BazaPodatakaDeliverMe1DataSet.xsc">
+      <DependentUpon>BazaPodatakaDeliverMe1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BazaPodatakaDeliverMe1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazaPodatakaDeliverMe1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BazaPodatakaDeliverMe1DataSet.xss">
+      <DependentUpon>BazaPodatakaDeliverMe1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BazaPodatakaDeliverMe1DataSet1.xsc">
+      <DependentUpon>BazaPodatakaDeliverMe1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BazaPodatakaDeliverMe1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazaPodatakaDeliverMe1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BazaPodatakaDeliverMe1DataSet1.xss">
+      <DependentUpon>BazaPodatakaDeliverMe1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BazaPodatakaDeliverMe1DataSet2.xsc">
+      <DependentUpon>BazaPodatakaDeliverMe1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BazaPodatakaDeliverMe1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazaPodatakaDeliverMe1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BazaPodatakaDeliverMe1DataSet2.xss">
+      <DependentUpon>BazaPodatakaDeliverMe1DataSet2.xsd</DependentUpon>
+    </None>
     <None Include="BazaPodatakaDeliverMeDataSet.xsc">
       <DependentUpon>BazaPodatakaDeliverMeDataSet.xsd</DependentUpon>
     </None>
@@ -291,7 +410,83 @@
     <None Include="BazaPodatakaDeliverMeDataSet.xss">
       <DependentUpon>BazaPodatakaDeliverMeDataSet.xsd</DependentUpon>
     </None>
+    <None Include="BazaPodatakaDeliverMeDataSet1.xsc">
+      <DependentUpon>BazaPodatakaDeliverMeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BazaPodatakaDeliverMeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazaPodatakaDeliverMeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BazaPodatakaDeliverMeDataSet1.xss">
+      <DependentUpon>BazaPodatakaDeliverMeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BazaPodatakaDeliverMeDataSet2.xsc">
+      <DependentUpon>BazaPodatakaDeliverMeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BazaPodatakaDeliverMeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazaPodatakaDeliverMeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BazaPodatakaDeliverMeDataSet2.xss">
+      <DependentUpon>BazaPodatakaDeliverMeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BazaPodatakaDeliverMeDataSet3.xsc">
+      <DependentUpon>BazaPodatakaDeliverMeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BazaPodatakaDeliverMeDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazaPodatakaDeliverMeDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BazaPodatakaDeliverMeDataSet3.xss">
+      <DependentUpon>BazaPodatakaDeliverMeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BazaPodatakaDeliverMeDataSet4.xsc">
+      <DependentUpon>BazaPodatakaDeliverMeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BazaPodatakaDeliverMeDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazaPodatakaDeliverMeDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BazaPodatakaDeliverMeDataSet4.xss">
+      <DependentUpon>BazaPodatakaDeliverMeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DM.xsc">
+      <DependentUpon>DM.xsd</DependentUpon>
+    </None>
+    <None Include="DM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DM.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DM.xss">
+      <DependentUpon>DM.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="gg.xsc">
+      <DependentUpon>gg.xsd</DependentUpon>
+    </None>
+    <None Include="gg.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gg.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gg.xss">
+      <DependentUpon>gg.xsd</DependentUpon>
+    </None>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\DM.ArtikliDataTable.datasource" />
+    <None Include="Properties\DataSources\DM.ProdoavacDataTable.datasource" />
+    <None Include="Properties\DataSources\DM_app.BazaPodatakaDeliverMe1DataSetTableAdapters.NarudzbaTableAdapter.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -309,11 +504,29 @@
     <Content Include="BazaPodatakaDeliverMe.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="BazaPodatakaDeliverMe1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BazaPodatakaDeliverMe1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>BazaPodatakaDeliverMe1.mdf</DependentUpon>
+    </Content>
     <Content Include="BazaPodatakaDeliverMe_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>BazaPodatakaDeliverMe.mdf</DependentUpon>
     </Content>
     <Content Include="Menu prikazi\MetroFramework.txt" />
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\51445114_248171196080731_3214708662287204352_n.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -326,6 +539,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets')" />

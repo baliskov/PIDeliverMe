@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="de770e084f574b60b2b5523d321acfe0" Name="Diagram1">
+        <EntityTypeShape EntityType="BazaPodatakaDeliverMe1Model.Artikli" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BazaPodatakaDeliverMe1Model.Prodoavac" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="BazaPodatakaDeliverMe1Model.FK_Artikli_Prodoavac" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BazaPodatakaDeliverMe1Model.Kosarica" Width="1.5" PointX="5.375" PointY="5.125" />
+        <EntityTypeShape EntityType="BazaPodatakaDeliverMe1Model.Kupac" Width="1.5" PointX="0.5" PointY="5.125" />
+        <EntityTypeShape EntityType="BazaPodatakaDeliverMe1Model.Narudzba" Width="1.5" PointX="7.625" PointY="0.875" />
+        <EntityTypeShape EntityType="BazaPodatakaDeliverMe1Model.Stavka_kosarice" Width="1.5" PointX="5.375" PointY="1.375" />
+        <AssociationConnector Association="BazaPodatakaDeliverMe1Model.FK_Stavka_kosarice_Artikli" />
+        <AssociationConnector Association="BazaPodatakaDeliverMe1Model.FK_Kosarica_Stavka_kosarice" />
+        <AssociationConnector Association="BazaPodatakaDeliverMe1Model.FK_Narudzba_Prodoavac" />
+        <AssociationConnector Association="BazaPodatakaDeliverMe1Model.FK_Narudzba_Stavka_kosarice" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
